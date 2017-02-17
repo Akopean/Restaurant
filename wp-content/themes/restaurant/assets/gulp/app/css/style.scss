@@ -1,0 +1,358 @@
+// Add Mixin
+@import "../scss/mixin/mixin";
+
+/*============    Slider Slick    ==========*/
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+$slick-font-path: "../fonts/";
+$slick-loader-path: "../images/";
+@import "../../bower_components/slick-carousel/slick/slick-theme.scss";
+
+/*============    ANIMATE     ==========*/
+@import "../../bower_components/animate-css/animate.min";
+
+/*============    ICON    ==========*/
+@import "../scss/icon/awesome/font-awesome";
+
+/*============    FONTS    ==========*/
+@import "../scss/fonts/fonts";
+
+/*============    Framework    ==========*/
+@import "../scss/foundation";
+//@import ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap
+//@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200)
+
+/*============    WP FIXED CLASSES    ==========*/
+@import "wp-style-fixed.scss";
+
+
+html { overflow-x: hidden; overflow-y: hidden;}
+body { overflow-x: hidden; overflow-y: hidden;}
+
+
+.site-header{
+	height: 100vh;
+	//margin: 10px;
+	background:
+		url(../images/bg-vecter-top.png) no-repeat 0 0,
+		url(../images/bg-vecter-bottom.png) no-repeat 0 100%,
+		url(../images/header-bg.jpg) no-repeat;
+
+	background-size: contain,contain,cover;
+	background-color: black;
+}
+
+.animsition, .animsition-overlay {
+    position: relative;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 1;
+    animation-duration: 1ms;
+}
+.homebanner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    //position: relative;
+}
+
+ul.scene{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    overflow: hidden;
+    text-align: center;
+}
+
+ul.scene li {
+	display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 108%;
+    height: 108%;
+    margin: -4% 0 0 -4%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+
+ul.scene li>div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.splash5a>div {
+    -webkit-animation: float1 2s ease-in-out 0s infinite alternate;
+    -moz-animation: float1 2s ease-in-out 0s infinite alternate;
+    animation: float1 2s ease-in-out 0s infinite alternate;
+}
+
+.splash5>div {
+    -webkit-animation: float3 4s ease-in-out 0s infinite alternate;
+    -moz-animation: float3 4s ease-in-out 0s infinite alternate;
+    animation: float3 4s ease-in-out 0s infinite alternate;
+}
+
+.splash4>div {
+    -webkit-animation: float2 5s ease-in-out 0s infinite alternate;
+    -moz-animation: float2 5s ease-in-out 0s infinite alternate;
+    animation: float2 5s ease-in-out 0s infinite alternate;
+}
+
+.splash3a>div {
+    -webkit-animation: float1 1.5s ease-in-out 0s infinite alternate;
+    -moz-animation: float1 1.5s ease-in-out 0s infinite alternate;
+    animation: float1 1.5s ease-in-out 0s infinite alternate;
+}
+
+.splash3>div {
+    -webkit-animation: float1 2s ease-in-out 0s infinite alternate;
+    -moz-animation: float1 2s ease-in-out 0s infinite alternate;
+    animation: float1 2s ease-in-out 0s infinite alternate;
+}
+
+.splash2>div {
+    -webkit-animation: float4 3s ease-in-out 0s infinite alternate;
+    -moz-animation: float4 3s ease-in-out 0s infinite alternate;
+    animation: float4 3s ease-in-out 0s infinite alternate;
+}
+
+.splash1>div {
+    -webkit-animation: float2 2s ease-in-out 0s infinite alternate;
+    -moz-animation: float2 2s ease-in-out 0s infinite alternate;
+    animation: float2 2s ease-in-out 0s infinite alternate;
+}
+
+.splash0>div {
+}
+
+ul.scene li>div>div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.scene li.splash5a>div>div {
+	background-image: url(http://www.milkable.me/mkwp/wp-content/themes/milkable/_inc/img/splash5a.png);
+    left: -5%;
+    top: -5%;
+    width: 110%;
+    height: 110%;
+}
+
+ul.scene li.splash5>div>div {
+	background-image: url(http://www.milkable.me/mkwp/wp-content/themes/milkable/_inc/img/splash5.png);
+    left: -5%;
+    top: -5%;
+    width: 110%;
+    height: 110%;
+}
+
+ul.scene li.splash4>div>div {
+	background-image: url(http://www.milkable.me/mkwp/wp-content/themes/milkable/_inc/img/splash4.png);
+}
+
+ul.scene li.splash3a>div>div {
+	background-image: url(http://www.milkable.me/mkwp/wp-content/themes/milkable/_inc/img/splash3a.png);
+}
+
+ul.scene li.splash3>div>div {
+	background-image: url(http://www.milkable.me/mkwp/wp-content/themes/milkable/_inc/img/splash3.png);
+}
+
+ul.scene li.splash2>div>div {
+	background-image: url(http://www.milkable.me/mkwp/wp-content/themes/milkable/_inc/img/splash2.png);
+}
+
+ul.scene li.splash1>div>div {
+	background-image: url(http://www.milkable.me/mkwp/wp-content/themes/milkable/_inc/img/splash1.png);
+}
+
+ul.scene li.splash0>div>div {
+	background-image: url(http://www.milkable.me/mkwp/wp-content/themes/milkable/_inc/img/splash_bg.jpg);
+}
+
+.zoomInUp {
+    -webkit-animation-name: zoomInUp;
+    animation-name: zoomInUp;
+}
+.zoomInUp1 {
+    -webkit-animation-name: zoomInUp1;
+    animation-name: zoomInUp1;
+}
+.zoomInUp2 {
+    -webkit-animation-name: zoomInUp2;
+    animation-name: zoomInUp2;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+@keyframes float1{
+	0% {
+	    -webkit-transform: translateY(10px);
+	    -moz-transform: translateY(10px);
+	    transform: translateY(10px);
+	}
+
+	100% {
+	    -webkit-transform: translateY(0px);
+	    -moz-transform: translateY(0px);
+	    transform: translateY(0px);
+	}
+}
+
+@keyframes float2{
+	0% {
+	    -webkit-transform: translateY(10px);
+	    -moz-transform: translateY(10px);
+	    transform: translateY(10px);
+	}
+
+	100% {
+	    -webkit-transform: translateY(0px);
+	    -moz-transform: translateY(0px);
+	    transform: translateY(0px);
+	}
+}
+
+@keyframes float3{
+	0% {
+	    -webkit-transform: translateY(20px);
+	    -moz-transform: translateY(20px);
+	    transform: translateY(20px);
+	}
+
+	100% {
+	    -webkit-transform: translateY(0px);
+	    -moz-transform: translateY(0px);
+	    transform: translateY(0px);
+	}
+}
+
+@keyframes float4{
+	0% {
+	    -webkit-transform: rotateZ(-1deg);
+	    -moz-transform: rotateZ(-1deg);
+	    transform: rotateZ(-1deg);
+	}
+
+	100% {
+	    -webkit-transform: rotateZ(1deg);
+	    -moz-transform: rotateZ(1deg);
+	    transform: rotateZ(1deg);
+	}
+}
+
+@keyframes zoomInUp{
+	0% {
+	    -webkit-transform: scale3d(.8,.8,.8);
+	    transform: scale3d(.8,.8,.8);
+	}
+
+	50% {
+	}
+}
+
+@keyframes zoomInUp1{
+	0% {
+	    -webkit-transform: scale3d(.7,.7,.7);
+	    transform: scale3d(.7,.7,.7);
+	}
+
+	50% {
+	}
+}
+
+@keyframes zoomInUp2{
+	0% {
+	    -webkit-transform: scale3d(.6,.6,.6);
+	    transform: scale3d(.6,.6,.6);
+	}
+
+	50% {
+	}
+}
+
+
+/*============      Adaptive    ===========*/
+
+// Small screens
+@media only screen {
+
+}
+
+/* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+
+}
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+}
+
+// Small - Medium screens
+@media only screen and (max-width: 64em) {
+}
+
+/* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+}
+
+// min-width 1025px
+@media only screen and (min-width: 64.063em) {
+}
+
+/* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+
+}
+
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) {}
+
+
+/* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {}
+
+
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) {}
+
+
+/* min-width 1921px, xxlarge screens */
+
