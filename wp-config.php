@@ -23,13 +23,13 @@
 define('DB_NAME', 'restaurant');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'restaurant');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'toor');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'mysql://mysql:3306/');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
